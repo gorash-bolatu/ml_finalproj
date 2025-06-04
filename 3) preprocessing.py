@@ -24,3 +24,4 @@ print("Scaled X:")
 print(X.head())
 
 df.to_csv('student\student-PROCESSED.csv', sep=';', index=False, quoting=1)
+print("Processed dataset saved to: student-PROCESSED.csv")
