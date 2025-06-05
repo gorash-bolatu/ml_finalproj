@@ -1,11 +1,14 @@
 import pandas as pd
 from matplotlib import pyplot as plt
+import seaborn as sns
 
 df = pd.read_csv('student\student-merged.csv', sep=';', quoting=1)
 
 print(df.head())
 
 print(df.info())
+
+print("Missing values: ", df.isna().sum().sum())
 
 print("Plotting histogram...")
 plt.figure(figsize=(6, 4))
